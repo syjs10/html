@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div{
+			margin: 0px;
+			padding : 0px;
+			border: 0px;
+			height: 100px;
+			width: 100px;
+			position: relative;
+			float: left;
+		}
+		.b{
+			background-color: red;
+		}
+		.b:hover {
+			
+			background-color: yellow;
+			animation: mymove2 5s infinite;
+			-webkit-animation: mymove2 5s infinite;
+		}
+		@keyframes mymove2{                                    
+			0% {top: 0px; background-color: yellow}
+			50% {top: 100px}
+			100% {top: 0px; background-color: green}
+		}
+		@-webkit-keyframes mymove2{
+			0% {top: 0px}
+			50% {top: 100px}
+			100% {top: 0px}	
+		}
+	</style>
+</head>
+<body>
+	<div class="a"><!-- Internet Explorer 10, Firefox, 和 Opera 支持 @keyframes 属性 -->
+	<!-- Safari和Chrome使用私有属性@-WebKit-keyframes支持 -->
+	</div>
+	<div class="b"></div>
+</body>
+</html>
