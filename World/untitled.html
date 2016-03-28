@@ -2,22 +2,22 @@
 <html>
 
 <head>
-    <meta http-equiv="content-Type" content="text/css3; charset=UTF-8">
+    <meta http-equiv ="content-Type" content="text/css3; charset=UTF-8">
     <title>网际世界</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel ="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
-    <div id="head">
+        <div id="head">
         <!-- 固定的标题顶栏 -->
-        <div class="logo head-content">
+            <div class="logo head-content">
             <!-- 冰火世界logo -->
-        </div>
+            </div>
         <div class="navbar head-content">
             <ul>
                 <li><a href="#">HOME</a><span></span></li>
                 <li><a href="#">FIRE</a><span></span></li>
-                <li><a href="#">LOGIN</a><span></span></li>
+                <li id="log"><a href="#">LOGIN</a><span></span></li>
                 <li class="about-btn" id="btn">+</li>
             </ul>
             <!-- 选项按钮和下拉菜单 -->
@@ -28,18 +28,28 @@
         <div>作者JS</div>
     </div>
     </div>
-     <div class="forms">
+     <div class="forms" id="forms">
+            <div class="close">
+                × 
+            </div>
             <form method="post" action="laowang.php">
-                用户名：
+                <br><br>
+                <span class = "form_font" >用户名：</span>
                 <input type="text" id="name">
-                <br> 密码：&nbsp;&nbsp;&nbsp;&nbsp;
+                <br> <br>
+                <span class = "form_font">密码：</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="password" id="password">
-                <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="checkbox" value="hold" name="habit">记住密码 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="checkbox" value="log" name="habit">自动登陆
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="submit" value="登陆" name="submitBnt" />
-                <input type="reset" value="注册" name="submitBnt" />
+                <br>
+                <br> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" value="hold" name="habit"><span class = "form_font1">记住密码</span></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" value="log" name="habit"><span class = "form_font1">自动登陆</span>
+                <br>
+                <br>
+                <br>
+                <input type="submit" value="登    陆" name="submitBnt" class="form_bar" />
+                <br>
+                <input type="reset" value="注    册" name="submitBnt" class="form_bar"/>
             </form>
         </div>
     </div>
@@ -51,15 +61,19 @@
         <!-- 固定的标题顶栏 -->
     </div>
 </body>
-<script>
-var btn = document.getElementById('btn');
-btn.addEventListener('mouseover', function() {
-    document.getElementById('menu').setAttribute('class', "menu show");
-});
-btn.addEventListener('mouseout', function() {
-    document.getElementById('menu').setAttribute('class', "menu");
+    <script type="text/javascript">
+        var btn = document.getElementById('btn menu');
+        btn.addEventListener('mouseover', function() {
+            document.getElementById('menu').setAttribute('class', "menu show");
+        });
+        btn.addEventListener('mouseout', function() {
+            document.getElementById('menu').setAttribute('class', "menu");
+        });
+       var log = document.getElementbyId('log');
+        log.addEventListener('mouseover', function() {
+            document.getElementById('forms').setAttribute('class', "froms forms_show");
+            console.log('dssafasd');
+        });
 
-});
-</script>
-
+    </script>
 </html>
