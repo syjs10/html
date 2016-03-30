@@ -13,7 +13,7 @@
         <!-- 固定的标题顶栏 -->
             <div class="logo head-content">
             <!-- 冰火世界logo -->
-            <img src="ICElogo.png">
+            <img src="5.png">
             </div>
         <div class="navbar head-content">
             <ul>
@@ -23,12 +23,16 @@
                 <li class="about-btn" id="btn">+</li>
             </ul>
             <!-- 选项按钮和下拉菜单 -->
+            <div class="menu" id="menu">
+            <div><a herf="#">联系我们</a></div>
+            <div>作者JS</div>
         </div>
     </div>
-    <div class="menu" id="menu">
-        <div><a herf="#">联系我们</a></div>
-        <div>作者JS</div>
+    
     </div>
+    </div>
+    <div class="showpic">
+        <img src="image/1.jpg" width="427" height="219" id="showpic" /> 
     </div>
      <div class="forms" id="forms">
             <div href = "#"class="close" id = "close">
@@ -54,6 +58,9 @@
                 <input type="reset" value="注    册" name="submitBnt" class="form_bar"/>
             </form>
         </div>
+        <video controls="controls" >
+            <source src="./q.mp4" type="video/mp4" preload = "none" />
+        </video>
     </div>
     <div id="left">
     </div>
@@ -94,6 +101,24 @@
             close.addEventListener('click', function() {
             document.getElementById('forms').setAttribute('class', "forms");
         });
+        var curIndex =0;
+        //时间间隔 单位毫秒
+        var timeInterval=5000;
+       var arr=new Array();
+        arr[0]="1.jpg";
+        arr[1]="2.jpg";
+        arr[2]="3.jpg";
+        arr[3]="4.jpg";
+        setInterval(changeImg,timeInterval);
+        function changeImg(){
+            var obj=document.getElementById("showpic");
+            if (curIndex==arr.length-1){
+                curIndex=0;
+            }else{
+                curIndex+=1;
+            }
+            obj.src="image/"+arr[curIndex];
+        }
 
     </script>
 </html>
