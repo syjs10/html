@@ -8,10 +8,12 @@
 </head>
 
 <body>
+<div class = "all">
         <div id="head">
         <!-- 固定的标题顶栏 -->
             <div class="logo head-content">
             <!-- 冰火世界logo -->
+            <img src="ICElogo.png">
             </div>
         <div class="navbar head-content">
             <ul>
@@ -29,7 +31,7 @@
     </div>
     </div>
      <div class="forms" id="forms">
-            <div class="close">
+            <div href = "#"class="close" id = "close">
                 × 
             </div>
             <form method="post" action="laowang.php">
@@ -58,21 +60,39 @@
     <div id="center">
     </div>
     <div id="end">
-        <!-- 固定的标题顶栏 -->
+        <div class="e1" "e">
+            dsadadf
+        </div>
+        <div class="e2" "e">
+            asdf
+        </div>
+        <div class="e3" class = "e">
+            sdaf
+        </div>
+        <div class="e4" "e">
+            sdfa
+        </div>
+        <div class="e5" "e">
+            dsfas
+        </div>
     </div>
+</div>
 </body>
     <script type="text/javascript">
-        var btn = document.getElementById('btn menu');
+        var btn = document.getElementById('btn');
         btn.addEventListener('mouseover', function() {
             document.getElementById('menu').setAttribute('class', "menu show");
         });
         btn.addEventListener('mouseout', function() {
             document.getElementById('menu').setAttribute('class', "menu");
         });
-       var log = document.getElementbyId('log');
-        log.addEventListener('mouseover', function() {
-            document.getElementById('forms').setAttribute('class', "froms forms_show");
-            console.log('dssafasd');
+        var log = document.getElementById('log');
+            log.addEventListener('click', function() {
+            document.getElementById('forms').setAttribute('class', "forms forms_show");
+        });
+        var close = document.getElementById('close');
+            close.addEventListener('click', function() {
+            document.getElementById('forms').setAttribute('class', "forms");
         });
 
     </script>
