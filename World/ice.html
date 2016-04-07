@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv ="content-Type" content="text/css3; charset=UTF-8">
+    <title>网际世界</title>
+    <link rel ="stylesheet" type="text/css" href="css/ice.css" />
+</head>
+
+<body>
+<div class = "all">
+        <div id="head">
+        <!-- 固定的标题顶栏 -->
+            <div class="logo head-content">
+            <!-- 冰火世界logo -->
+            <img src="5.png">
+            </div>
+        <div class="navbar head-content">
+            <ul>
+                <li><a href="#">HOME</a><span></span></li>
+                <li><a href="#">FIRE</a><span></span></li>
+                <li id="log"><a href="#">LOGIN</a><span></span></li>
+                <li class="about-btn" id="btn">+</li>
+            </ul>
+            <!-- 选项按钮和下拉菜单 -->
+            <div class="menu" id="menu">
+            <div><a herf="#">联系我们</a></div>
+            <div>作者JS</div>
+        </div>
+    </div>
+    
+    </div>
+    </div>
+    <div class="showpic">
+        <img src="image/1.jpg" width="427" height="219" id="showpic" /> 
+    </div>
+     <div class="forms" id="forms">
+            <button href = "#"class="close" id = "close">
+                × 
+            </button>
+            <form method="post" action="laowang.php">
+                <br><br>
+                <span class = "form_font" >用户名：</span>
+                <input type="text" id="name">
+                <br> <br>
+                <span class = "form_font">密码：</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" id="password">
+                <br>
+                <br> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" value="hold" name="habit"><span class = "form_font1">记住密码</span></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" value="log" name="habit"><span class = "form_font1">自动登陆</span>
+                <br>
+                <br>
+                <br>
+                <input type="submit" value="登    陆" name="submitBnt" class="form_bar" />
+                <br>
+                <input type="reset" value="注    册" name="submitBnt" class="form_bar"/>
+            </form>
+        </div>
+        <video controls="controls" >
+            <source src="./q.mp4" type="video/mp4" preload = "none" />
+        </video>
+    </div>
+    <div id="left">
+    </div>
+    <div id="center">
+    </div>
+    <div id="end">
+        <div class="e1" "e">
+            dsadadf
+        </div>
+        <div class="e2" "e">
+            asdf
+        </div>
+        <div class="e3" class = "e">
+            sdaf
+        </div>
+        <div class="e4" "e">
+            sdfa
+        </div>
+        <div class="e5" "e">
+            dsfas
+        </div>
+    </div>
+</div>
+</body>
+    <script type="text/javascript">
+        var btn = document.getElementById('btn');
+        btn.addEventListener('mouseover', function() {
+            document.getElementById('menu').setAttribute('class', "menu show");
+        });
+        btn.addEventListener('mouseout', function() {
+            document.getElementById('menu').setAttribute('class', "menu");
+        });
+        var log = document.getElementById('log');
+            log.addEventListener('click', function() {
+            document.getElementById('forms').setAttribute('class', "forms forms_show");
+        });
+        var close = document.getElementById('close');
+            close.addEventListener('click', function() {
+            document.getElementById('forms').setAttribute('class', "forms");
+        });
+        var curIndex =0;
+        //时间间隔 单位毫秒
+        var timeInterval=5000;
+        var arr=new Array();
+        arr[0]="1.jpg";
+        arr[1]="2.jpg";
+        arr[2]="3.jpg";
+        arr[3]="4.jpg";
+        setInterval(changeImg,timeInterval);
+        function changeImg(){
+            var obj=document.getElementById("showpic");
+            if (curIndex==arr.length-1){
+                curIndex=0;
+            }else{
+                curIndex+=1;
+            }
+            obj.src="image/"+arr[curIndex];
+        }
+
+    </script>
+</html>
