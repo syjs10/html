@@ -409,19 +409,14 @@
         font-size: 20px;
     }
      .hf{
-        position: absolute;
-        bottom: 50px;
-        right: 0px;
-        width: 50px;
-        height: 30px;
-        font-size: 20px;
-        display: inline-block;
-        float: left;
+        height:30px;
+        margin-top:-30px;
+        text-align: right;
+        box-sizing: border-box;
+        padding-right:73.3333px;
     }
     .hf ul li{
-        position: relative;
-        list-style: none;
-        float: left;   
+        display: inline-block;
     }
     
     .pl{
