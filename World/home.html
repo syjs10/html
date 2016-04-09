@@ -17,9 +17,9 @@
             </div>
         <div class="navbar head-content">
             <ul>
-                <li><a href="#">HOME</a><span></span></li>
-                <li><a href="./fire">FIRE</a><span></span></li>
-                <li id="log"><a href="#">LOGIN</a><span></span></li>
+                <li><a href="./fire.html">Novals</a><span></span></li>
+                <li><a href="./ice.html">Movies</a><span></span></li>
+                <li id="log"><a href="#">Login</a><span></span></li>
                 <li class="about-btn" id="btn">+</li>
             </ul>
             <!-- 选项按钮和下拉菜单 -->
@@ -27,13 +27,23 @@
             <div><a herf="#">联系我们</a></div>
             <div>作者JS</div>
         </div>
+        
     </div>
-    
+   
     
     </div><!-- 
     <div class="showpic">
         <img src="image/1.jpg" width="427" height="219" id="showpic" /> 
     </div> -->
+    <div class="all">
+     <div class="pic1">
+            <a href="./ice.html"><div class="dy">电影世界</div></a>
+            <img id="pic1" src = "image/b0.jpg" >
+        </div>
+        <div class="pic2">
+            <a href="./fire.html"><div class="xs">小说世界</div></a>
+            <img id="pic2" src="image/d0.jpg" >
+        </div>
      <div class="forms" id="forms">
             <button href = "#"class="close" id = "close">
                 × 
@@ -53,9 +63,8 @@
                 <br>
                 <br>
                 <br>
-                <input type="submit" value="登    陆" name="submitBnt" class="form_bar" />
-                <br>
-               <a href="./register.html"><button href="./register.html" class="form_bar">注    册</button></a>
+                <a href="./loghome.html"><div class="form_bar" href="./register.html">登&nbsp;&nbsp;&nbsp;陆</div></a>
+               <a href="./register.html"><div class="form_bar" href="./register.html">注&nbsp;&nbsp;&nbsp;册</div></a>
             </form>
         </div>
         
@@ -67,6 +76,7 @@
     <div id="end">
         
     </div>
+</div>
 </div>
 </body>
     <script type="text/javascript">
@@ -85,24 +95,41 @@
             close.addEventListener('click', function() {
             document.getElementById('forms').setAttribute('class', "forms");
         });
-        // var curIndex =0;
-        // //时间间隔 单位毫秒
-        // var timeInterval=5000;
-        // var arr=new Array();
-        // arr[0]="1.jpg";
-        // arr[1]="2.jpg";
-        // arr[2]="3.jpg";
-        // arr[3]="4.jpg";
-        // setInterval(changeImg,timeInterval);
-        // function changeImg(){
-        //     var obj=document.getElementById("showpic");
-        //     if (curIndex==arr.length-1){
-        //         curIndex=0;
-        //     }else{
-        //         curIndex+=1;
-        //     }
-        //     obj.src="image/"+arr[curIndex];
-        // }
-
+        var curIndex1 =0;
+        //时间间隔 单位毫秒
+        var timeInterval=3000;
+        var arr1=new Array();
+        arr1[0]="b0.jpg";
+        arr1[1]="b1.jpg";
+        arr1[2]="b2.jpg";
+        arr1[3]="b3.jpg";
+        arr1[3]="b4.jpg";
+        setInterval(changeImg1,timeInterval);
+        function changeImg1(){
+            var obj1=document.getElementById("pic1");
+            if (curIndex1==arr1.length-1){
+                curIndex1=0;
+            }else{
+                curIndex1+=1;
+            }
+            obj1.src="image/"+arr1[curIndex1];
+        }
+         var curIndex2 =0;
+        var arr2=new Array();
+        arr2[0]="d0.jpg";
+        arr2[1]="d1.jpg";
+        arr2[2]="d2.jpg";
+        arr2[3]="d3.jpg";
+        arr2[3]="d4.jpg";
+        setInterval(changeImg2,timeInterval);
+        function changeImg2(){
+            var obj2=document.getElementById("pic2");
+            if (curIndex2==arr2.length-1){
+                curIndex2=0;
+            }else{
+                curIndex2+=1;
+            }
+            obj2.src="image/"+arr2[curIndex2];
+        }
     </script>
 </html>

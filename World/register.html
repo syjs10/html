@@ -220,6 +220,9 @@
 		var btn = document.getElementById("log");
 		function alt(){
 			var massage = confirm("恭喜你注册成功!!!");
+			if(massage == true){
+				window.top.location = "./home.html";
+			}
 		}
 		btn.onclick = alt;
 		

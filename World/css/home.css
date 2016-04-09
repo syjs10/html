@@ -1,17 +1,24 @@
+    a{
+        text-decoration: none;
+    }
     * {
         margin: 0;
         padding: 0;
     }
     .all{
-        height:1500px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        border-bottom: 0px;
+        position: absolute;
+        height:100px;
         width: 100%;
+        top: 50px;
     }
     body {
         width: 100%;
         height: 100%;
-        /*background: url() no-repeat;*/
-        background-color: #ddffdd;
-        background-size: cover;
+        
+        background-color: #55ff55;
         padding: 0px;
         margin: 0px;
         border: 0px;
@@ -36,6 +43,7 @@
     }
     
     .head-content {
+
         border: 0;
         width: 50%;
         height: 100%;
@@ -56,6 +64,7 @@
     }
     
     .navbar ul li span {
+       
         -webkit-transition: .3s;
         -o-transition: .3s;
         transition: .3s;
@@ -67,6 +76,7 @@
     }
     
     .navbar ul li:hover span {
+     
         background-color: #ff9c00;
         opacity: 1;
         margin-top: -3px;
@@ -138,34 +148,21 @@
         margin-top: 10px;
         border-right: 5px solid #ff9c00;
     }
-/*    .show {
+ .show {
         visibility: visible;
         opacity: 1;
         padding-right: 10px;
     }
-    .showpic{
-        position: absolute;
-        top: 75px;
-        width: 100%;
-        height: 600px;
-        box-shadow: 2px 2px 3px 4px #888888;
-        transform: 1s;
-        -o-transform: 1s;
-        -webkit-transform: 1s;
-    }
-    .showpic img{
-        width: 100%;
-        height: 100%;
-    }*/
 
     .forms {
+
         visibility: hidden;
-        opacity: 0.7;
-        background-color: #fff;
+        opacity: 0.8;
+        background-color: #ff9c00;
         box-shadow: 3px 2px 2px 2px #fdd;
         opacity: 0.7;
         position: absolute;
-        top: 30vh;
+        top: 20vh;
         left: 32vw;
         height: 350px;
         width: 410px;
@@ -191,7 +188,7 @@
     .form_bar{
         position: relative;
         left: 60px;
-        margin: 3px 0px;
+        margin-bottom: 10px;
         padding: 0px;
         border: 0px;
         background-color: #1AF20C;
@@ -201,13 +198,18 @@
         width: 300px;
         font-size: 35px;
         border-radius: 3px;
+        text-align: center;
+    }
+    .form_bar:hover{
+        background-color: #FF4455;
     }
     .close{
         margin: 0px;
-        padding: 0px;
+        padding-bottom: 5px;
+        padding-right: 3px;
         border: 0px;
         color: #fff;
-        line-height: 42%;
+        line-height: 20%;
         font-size: 38px;
         text-align: center;
         position: absolute;
@@ -221,5 +223,67 @@
     .forms_show{
         visibility: visible;
         background-color: #fff ;
+        z-index: 1000;
         background-color: rgba(255, 255, 255, 0.8);
+    }
+    .pic1{
+        background: url(./image/h1.jpg);
+        background: no-repeat;
+        position: relative;
+        left: 0px;
+        top: -45px;
+        width: 100%;
+        height: 516px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .pic2{
+        background: url(image/h2.jpg);
+        background: no-repeat;
+        background-size: 100%;
+        position: relative;
+        left: 0px;
+        top: -45px;
+        width: 100%;
+        height: 518px;
+    }
+    .dy{
+        padding-bottom: 7px;
+        padding-left: 5px;
+        border: 2px solid #fff;
+        font-size: 50px;
+        color: #fff;
+        border-radius: 20px;
+        font-width: bold;
+        text-align: center;
+        position: relative;
+        top: 270px; 
+        left: 470px;
+        width: 300px;
+        height: 60px;
+    }
+    .dy:hover{
+        border: 2px solid yellow;
+        color: yellow;
+    }
+  .xs{
+        padding-bottom: 7px;
+        padding-left: 5px;
+        border: 2px solid #f24356;
+        font-size: 50px;
+        color: #f24356;
+        border-radius: 20px;
+        font-width: bold;
+        text-align: center;
+        position: relative;
+        top: 270px; 
+        left: 470px;
+        width: 300px;
+        height: 60px;
+    }
+     .xs:hover{
+        border: 2px solid blue;
+        color: blue;
     }
