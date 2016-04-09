@@ -3,11 +3,12 @@
 
 <head>
     <meta http-equiv ="content-Type" content="text/css3; charset=UTF-8">
-    <title>网际世界</title>
+    <title>ice</title>
     <link rel ="stylesheet" type="text/css" href="css/ice.css" />
 </head>
 
 <body>
+<div class="bcg"><img src="./image/bb.jpg" class="background"></div>
         <div id="head">
         <!-- 固定的标题顶栏 -->
             <div class="logo head-content">
@@ -31,7 +32,7 @@
         
     
     </div>
-    <div class="eshow" id = "eshow">
+    <div class= id = "eshow">
         <img src="">
     </div>
      <div class="forms" id="forms">
@@ -58,33 +59,42 @@
                 <input type="reset" value="注    册" name="submitBnt" class="form_bar"/>
             </form>
         </div>
-        <video controls="controls" >
-            <source src="./q.mp4" type="video/mp4" preload = "none" />
+        <div class="vh1" id="hv">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;冰雪奇缘
+            </div>
+        <video id = "video" controls="controls" class="video" width="50vw" height="50vh">
+            <source <source src="let_it_go.mp4 " type="video/mp4" />
         </video>
     </div>
-    <div id="left">
+    <div class ="right">
+        <div class="r1">
+                <div class="r11"><img src="./image/chaoti.jpg" width="100%" height="100%"></div>
+                <div class="rr">超体</div>
+        </div>
+        <div class="r2">
+                <div class="r21"><img src="./image/hyr.jpg" width="100%" height="100%"></div>   
+                 <div class="rr">黑衣人</div>         
+        </div >
     </div>
     <div id="center">
     </div>
     <div id="end">
-        <div id="e1" class="e1" >
+        <div id="e1" class="e1" "e">
         <button href = "#"class="close" id = "close1">
                 × 
             </button>
+            <img src="image/yewen.jpg">
+        </div>
+        <div id="e2" class="e2" "e">
+            <img src="image/gongfu.jpg">
+        </div>
+        <div id="e3" class="e3" "e">
+            <img src="image/bianxing.jpg">
+        </div>
+        <div id="e4" class="e4" "e">
             <img src="">
         </div>
-        <div id="e2" class="e2" >
-            <img src="">
-        </div>
-        <div id="e3" class="e3" >
-            <img src="">
-        </div>
-        <div id="e4" class="e4" >
-            <img src="">
-        </div>
-        <div id="e5" class="e5" >
-            <img src="">
-        </div>
+        
     </div>
 </div>
 </body>
@@ -107,7 +117,7 @@
         var e1 = document.getElementById('e1');
             e1.addEventListener('click', function() {
             var eshow = document.getElementById('e1')
-            eshow.setAttribute('class', "eshow");
+            eshow.setAttribute('class', "eshow eshow img");
         });
         
             
@@ -125,7 +135,15 @@
         });
         var e5 = document.getElementById('e5');
             e5.addEventListener('click', function() {
-            document.getElementById('e5').setAttribute('class', "eshow");
+            document.getElementById('e5').setAttribute('class', "eshow ");
+        });
+        var video = document.getElementById('video');
+        video.addEventListener('mouseover', function(){
+            document.getElementById('hv').setAttribute('class', "vh");
+        });
+
+        video.addEventListener('mouseout', function(){
+            document.getElementById('hv').setAttribute('class', "vh1");
         });
     </script>
 </html>
