@@ -1,230 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<style type="text/css">
-	a{
-		text-decoration: none;
-	}
-	*{
-		margin: 0px;
-		padding: 0px;
-		border: 0px;
-	}
-	body{
-		background: url(image/log.jpg);
-		background-repeat: no-repeat;
-		background-size: 100%;
-
-	}
-	span{
-		position: relative;
-		top:3px;
-		font-size: 28px;
-		line-height: 29px;
-	}
-	.title{
-		position: absolute;
-		left: 43vw;
-		top: 5vh;
-		color: #ddd;
-		font-size: 70px;
-		font-family: "华文琥珀";
-	}
-	.all{
-		padding-top: 70px;
-		padding-bottom: 20px;
-		padding-left: 100px; 
-		width: 64%;
-		position: absolute;
-		top: 20vh;
-		left: 15vw;
-		border-radius: 2px;
-		background-color: rgba(255,255,255,0.4);
-	}
-	input{
-		font-size: 25px;
-		position: absolute;
-		left:270px;
-		line-height: 30px;
-		border-radius: 5px;
-		background-color: rgba(255,255,255,0.6);
-	}
-	#sex{
-		position: relative;
-		left: 200px;
-	}
-	.nv{
-		position: relative;
-		left: 205px;
-
-	}
-	.nan{
-		position: relative;
-		left: 205px;
-	}
-	.date select{
-		position: relative;
-		left: 45px;
-		height: 30px;
-		width: 90px;
-		opacity: 0.7;
-		border-radius: 5px;
-		list-style: none;
-
-	}
-	.a{
-		position: relative;
-		left: 47px;
-	}
-	.button{
-		position: relative;
-		left: 50px;
-		margin:30px 50px;
-		width: 200px; 
-		background: #00ff00;
-		color: #fff;
-	}
-	.button:hover{
-		background-color: #44ff44;
-	}
-	</style>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    a {
+        text-decoration: none;
+    }
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+    
+    body {
+        background: url(image/log.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    span {
+        position: relative;
+        top: 3px;
+        font-size: 28px;
+        line-height: 29px;
+    }
+    
+    .title {
+        position: absolute;
+        left: 43vw;
+        top: 5vh;
+        color: #ddd;
+        font-size: 70px;
+        font-family: "华文琥珀";
+    }
+    
+    .all {
+        padding-top: 70px;
+        padding-bottom: 20px;
+        padding-left: 100px;
+        width: 64%;
+        position: absolute;
+        top: 20vh;
+        left: 15vw;
+        border-radius: 2px;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    
+    input {
+        font-size: 25px;
+        position: absolute;
+        left: 270px;
+        line-height: 30px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    
+    #sex {
+        position: relative;
+        left: 200px;
+    }
+    
+    .nv {
+        position: relative;
+        left: 205px;
+    }
+    
+    .nan {
+        position: relative;
+        left: 205px;
+    }
+    
+    .date select {
+        position: relative;
+        left: 45px;
+        height: 30px;
+        width: 90px;
+        opacity: 0.7;
+        border-radius: 5px;
+        list-style: none;
+    }
+    
+    .a {
+        position: relative;
+        left: 47px;
+    }
+    
+    .button {
+        position: relative;
+        left: 50px;
+        margin: 30px 50px;
+        width: 200px;
+        background: #00ff00;
+        color: #fff;
+    }
+    
+    .button:hover {
+        background-color: #44ff44;
+    }
+    </style>
 </head>
-<body>
-	<div class="title">注册</div>
-<div class="all">
-	
-	<div class="mainbody">
-		<div>
-			<span>用户名:</span>
-			<input type="text" id="name"></input>
-		</div>
-		<br>
-		<div>
-			<span>密码:</span>
-			<input type="password" id="pasward1"></input>
-		</div>
-		<br>
-		<div>
-			<span>确认密码:</span>
-			<input type="password" id="passward2"></input>
-		</div>
-		<br>
-		<div>
-			<span>性别:</span>
-			<input type="checkbox" id="sex" value="male"><span class="nan">男</span></input>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<input type="checkbox" id="sex" value="female"><span class="nv">女</span></input>
-		</div>
-		<br>
-		<div class="date">
-			<span>出生日期:</span>
-			<select name="year">
-				<option vaule="1990" selected="selected">1990</option>
-				<option vaule="1991">1991</option>
-				<option vaule="1992">1992</option>
-				<option vaule="1993">1993</option>
-				<option vaule="1994">1994</option>
-				<option vaule="1995">1995</option>
-				<option vaule="1996">1996</option>
-				<option vaule="1997">1997</option>
-				<option vaule="1998">1998</option>
-				<option vaule="1999">1999</option>
-				<option vaule="2000">2000</option>
-				<option vaule="2001">2001</option>
-				<option vaule="2002">2002</option>
-				<option vaule="2003">2003</option>
-				<option vaule="2004">2004</option>
-				<option vaule="2005">2005</option>
-				<option vaule="2006">2006</option>
-				<option vaule="2007">2007</option>
-				<option vaule="2008">2008</option>
-				<option vaule="2009">2009</option>
-				<option vaule="2010">2010</option>
-				<option vaule="2011">2011</option>
-				<option vaule="2012">2012</option>
-				<option vaule="2013">2013</option>
-				<option vaule="2014">2014</option>
-				<option vaule="2015">2015</option>
-				<option vaule="2016">2016</option>
-				<option vaule="2017">2017</option>
-   			</select>
-   			<span class="a">年</span>
-   			<select name="month">
-				<option vaule="1" selected="selected">1</option>
-				<option vaule="2">2</option>
-				<option vaule="2">2</option>
-				<option vaule="3">3</option>
-				<option vaule="4">4</option>
-				<option vaule="5">5</option>
-				<option vaule="6">6</option>
-				<option vaule="7">7</option>
-				<option vaule="8">8</option>
-				<option vaule="9">9</option>
-				<option vaule="10">10</option>
-				<option vaule="11">11</option>
-				<option vaule="12">12</option>
-   			</select>
-   			<span class="a">月</span>
-   			<select name="day">
-				<option vaule="1" selected="selected">1</option>
-				<option vaule="2">2</option>
-				<option vaule="2">2</option>
-				<option vaule="3">3</option>
-				<option vaule="4">4</option>
-				<option vaule="5">5</option>
-				<option vaule="6">6</option>
-				<option vaule="7">7</option>
-				<option vaule="8">8</option>
-				<option vaule="9">9</option>
-				<option vaule="10">10</option>
-				<option vaule="11">11</option>
-				<option vaule="12">12</option>
-				<option vaule="13">13</option>
-				<option vaule="14">14</option>
-				<option vaule="15">15</option>
-				<option vaule="16">16</option>
-				<option vaule="17">17</option>
-				<option vaule="18">18</option>
-				<option vaule="19">19</option>
-				<option vaule="20">20</option>
-				<option vaule="21">21</option>
-				<option vaule="22">22</option>
-				<option vaule="23">23</option>
-				<option vaule="24">24</option>
-				<option vaule="25">25</option>
-				<option vaule="26">26</option>
-				<option vaule="27">27</option>
-				<option vaule="28">28</option>
-				<option vaule="29">29</option>
-				<option vaule="30">30</option>
-				<option vaule="31">31</option>
-   			</select>
-   			<span class="a">日</span>
-		</div>
-		<br>
-		<div>
-			<span>家庭住址:</span>
-			<input type="text" id="name"></input>
-		</div>
-		<div>
-			<input type="submit" value="注册" class="button" id = "log"></input>
 
-			<a href="./home.html"><input type="reset" value="取消" class="button" id="q"></input></a>
-		</div>
-	</div>
-</div>
+<body>
+    <div class="title">注册</div>
+    <div class="all">
+        <div class="mainbody">
+            <div>
+                <span>用户名:</span>
+                <input type="text" id="name"></input>
+            </div>
+            <br>
+            <div>
+                <span>密码:</span>
+                <input type="password" id="pasward1"></input>
+            </div>
+            <br>
+            <div>
+                <span>确认密码:</span>
+                <input type="password" id="passward2"></input>
+            </div>
+            <br>
+            <div>
+                <span>性别:</span>
+                <input type="checkbox" id="sex" value="male"><span class="nan">男</span></input>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="sex" value="female"><span class="nv">女</span></input>
+            </div>
+            <br>
+            <div class="date">
+                <span>出生日期:</span>
+                <select name="year">
+                    <option vaule="1990" selected="selected">1990</option>
+                    <option vaule="1991">1991</option>
+                    <option vaule="1992">1992</option>
+                    <option vaule="1993">1993</option>
+                    <option vaule="1994">1994</option>
+                    <option vaule="1995">1995</option>
+                    <option vaule="1996">1996</option>
+                    <option vaule="1997">1997</option>
+                    <option vaule="1998">1998</option>
+                    <option vaule="1999">1999</option>
+                    <option vaule="2000">2000</option>
+                    <option vaule="2001">2001</option>
+                    <option vaule="2002">2002</option>
+                    <option vaule="2003">2003</option>
+                    <option vaule="2004">2004</option>
+                    <option vaule="2005">2005</option>
+                    <option vaule="2006">2006</option>
+                    <option vaule="2007">2007</option>
+                    <option vaule="2008">2008</option>
+                    <option vaule="2009">2009</option>
+                    <option vaule="2010">2010</option>
+                    <option vaule="2011">2011</option>
+                    <option vaule="2012">2012</option>
+                    <option vaule="2013">2013</option>
+                    <option vaule="2014">2014</option>
+                    <option vaule="2015">2015</option>
+                    <option vaule="2016">2016</option>
+                    <option vaule="2017">2017</option>
+                </select>
+                <span class="a">年</span>
+                <select name="month">
+                    <option vaule="1" selected="selected">1</option>
+                    <option vaule="2">2</option>
+                    <option vaule="2">2</option>
+                    <option vaule="3">3</option>
+                    <option vaule="4">4</option>
+                    <option vaule="5">5</option>
+                    <option vaule="6">6</option>
+                    <option vaule="7">7</option>
+                    <option vaule="8">8</option>
+                    <option vaule="9">9</option>
+                    <option vaule="10">10</option>
+                    <option vaule="11">11</option>
+                    <option vaule="12">12</option>
+                </select>
+                <span class="a">月</span>
+                <select name="day">
+                    <option vaule="1" selected="selected">1</option>
+                    <option vaule="2">2</option>
+                    <option vaule="2">2</option>
+                    <option vaule="3">3</option>
+                    <option vaule="4">4</option>
+                    <option vaule="5">5</option>
+                    <option vaule="6">6</option>
+                    <option vaule="7">7</option>
+                    <option vaule="8">8</option>
+                    <option vaule="9">9</option>
+                    <option vaule="10">10</option>
+                    <option vaule="11">11</option>
+                    <option vaule="12">12</option>
+                    <option vaule="13">13</option>
+                    <option vaule="14">14</option>
+                    <option vaule="15">15</option>
+                    <option vaule="16">16</option>
+                    <option vaule="17">17</option>
+                    <option vaule="18">18</option>
+                    <option vaule="19">19</option>
+                    <option vaule="20">20</option>
+                    <option vaule="21">21</option>
+                    <option vaule="22">22</option>
+                    <option vaule="23">23</option>
+                    <option vaule="24">24</option>
+                    <option vaule="25">25</option>
+                    <option vaule="26">26</option>
+                    <option vaule="27">27</option>
+                    <option vaule="28">28</option>
+                    <option vaule="29">29</option>
+                    <option vaule="30">30</option>
+                    <option vaule="31">31</option>
+                </select>
+                <span class="a">日</span>
+            </div>
+            <br>
+            <div>
+                <span>家庭住址:</span>
+                <input type="text" id="name"></input>
+            </div>
+            <div>
+                <input type="submit" value="注册" class="button" id="log"></input>
+                <a href="./home.html">
+                    <input type="reset" value="取消" class="button" id="q"></input>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
-	<script type="text/javascript">
-		var btn = document.getElementById("log");
-		function alt(){
-			var massage = confirm("恭喜你注册成功!!!");
-			if(massage == true){
-				window.top.location = "./home.html";
-			}
-		}
-		btn.onclick = alt;
-		
-	</script>
+<script type="text/javascript">
+var btn = document.getElementById("log");
+
+function alt() {
+    var massage = confirm("恭喜你注册成功!!!");
+    if (massage == true) {
+        window.top.location = "./home.html";
+    }
+}
+btn.onclick = alt;
+</script>
+
 </html>

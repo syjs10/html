@@ -2,142 +2,148 @@
 <html>
 
 <head>
-    <meta http-equiv ="content-Type" content="text/css3; charset=UTF-8">
+    <meta http-equiv="content-Type" content="text/css3; charset=UTF-8">
     <title></title>
-    <link rel ="stylesheet" type="text/css" href="css/loghome.css" />
+    <link rel="stylesheet" type="text/css" href="css/loghome.css" />
     <style type="text/css">
-        .aa{
-            color: red;
-        }
+    .aa {
+        color: red;
+    }
     </style>
 </head>
 
 <body>
-
-        <div id="head">
+    <div id="head">
         <!-- 固定的标题顶栏 -->
-            <div class="logo head-content">
+        <div class="logo head-content">
             <!-- 冰火世界logo -->
             <img src="">
-            </div>
+        </div>
         <div class="navbar head-content">
             <ul>
                 <li><a href="./fire.html">Novals</a><span></span></li>
                 <li><a href="./ice.html">Movies</a><span></span></li>
                 <li id="log"><a href="#">Login</a><span></span></li>
-                <li class="about-btn" id="btn"><img  class="logpic" src="image/logpic.jpg"></li>
+                <li class="about-btn" id="btn"><img class="logpic" src="image/logpic.jpg"></li>
             </ul>
             <!-- 选项按钮和下拉菜单 -->
             <div class="menu" id="menu">
-            <div><a herf="#">个人设置</a></div>
-            <div><a herf="#">消息(<span class="aa">3</span>)</a></div>
-            <div>收藏</div>
-            <div><a herf="#">退出登录</a></div>
+                <div><a herf="#">个人设置</a></div>
+                <div><a herf="#">消息(<span class="aa">3</span>)</a></div>
+                <div>收藏</div>
+                <div><a herf="#">退出登录</a></div>
+            </div>
         </div>
-        
     </div>
-   
-    
-    </div><!-- 
+    <!-- 
     <div class="showpic">
         <img src="image/1.jpg" width="427" height="219" id="showpic" /> 
     </div> -->
     <div class="all">
-     <div class="pic1">
-            <a href="./ice.html"><div class="dy">电影世界</div></a>
-            <img id="pic1" src = "image/b0.jpg" >
+        <div class="pic1">
+            <a href="./ice.html">
+                <div class="dy">电影世界</div>
+            </a>
+            <img id="pic1" src="image/b0.jpg">
         </div>
         <div class="pic2">
-            <a href="./fire.html"><div class="xs">小说世界</div></a>
-            <img id="pic2" src="image/d0.jpg" >
+            <a href="./fire.html">
+                <div class="xs">小说世界</div>
+            </a>
+            <img id="pic2" src="image/d0.jpg">
         </div>
-     <div class="forms" id="forms">
-            <button href = "#"class="close" id = "close">
-                × 
+        <div class="forms" id="forms">
+            <button href="#" class="close" id="close">
+                ×
             </button>
             <form method="post" action="laowang.php">
-                <br><br>
-                <span class = "form_font" >用户名：</span>
+                <br>
+                <br>
+                <span class="form_font">用户名：</span>
                 <input type="text" id="name">
-                <br> <br>
-                <span class = "form_font">密码：</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br>
+                <br>
+                <span class="form_font">密码：</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="password" id="password">
                 <br>
-                <br> <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="checkbox" value="hold" name="habit"><span class = "form_font1">记住密码</span></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="checkbox" value="log" name="habit"><span class = "form_font1">自动登陆</span>
+                <br>
+                <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" value="hold" name="habit"><span class="form_font1">记住密码</span></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" value="log" name="habit"><span class="form_font1">自动登陆</span>
                 <br>
                 <br>
                 <br>
                 <input type="submit" value="登    陆" name="submitBnt" class="form_bar" />
                 <br>
-               <a href="./register.html"><div class="form_bar" href="./register.html">注&nbsp;&nbsp;&nbsp;册</div></a>
+                <a href="./register.html">
+                    <div class="form_bar" href="./register.html">注&nbsp;&nbsp;&nbsp;册</div>
+                </a>
             </form>
         </div>
-        
     </div>
     <div id="left">
     </div>
     <div id="center">
     </div>
     <div id="end">
-        
     </div>
-</div>
-</div>
+    </div>
+    </div>
 </body>
-    <script type="text/javascript">
-        var btn = document.getElementById('btn');
-        btn.addEventListener('mouseover', function() {
-            document.getElementById('menu').setAttribute('class', "menu show");
-        });
-        btn.addEventListener('mouseout', function() {
-            document.getElementById('menu').setAttribute('class', "menu");
-        });
-        var log = document.getElementById('log');
-            log.addEventListener('click', function() {
-            document.getElementById('forms').setAttribute('class', "forms forms_show");
-        });
-        var close = document.getElementById('close');
-            close.addEventListener('click', function() {
-            document.getElementById('forms').setAttribute('class', "forms");
-        });
-        var curIndex1 =0;
-        //时间间隔 单位毫秒
-        var timeInterval=3000;
-        var arr1=new Array();
-        arr1[0]="b0.jpg";
-        arr1[1]="b1.jpg";
-        arr1[2]="b2.jpg";
-        arr1[3]="b3.jpg";
-        arr1[3]="b4.jpg";
-        setInterval(changeImg1,timeInterval);
-        function changeImg1(){
-            var obj1=document.getElementById("pic1");
-            if (curIndex1==arr1.length-1){
-                curIndex1=0;
-            }else{
-                curIndex1+=1;
-            }
-            obj1.src="image/"+arr1[curIndex1];
-        }
-         var curIndex2 =0;
-        var arr2=new Array();
-        arr2[0]="d0.jpg";
-        arr2[1]="d1.jpg";
-        arr2[2]="d2.jpg";
-        arr2[3]="d3.jpg";
-        arr2[3]="d4.jpg";
-        setInterval(changeImg2,timeInterval);
-        function changeImg2(){
-            var obj2=document.getElementById("pic2");
-            if (curIndex2==arr2.length-1){
-                curIndex2=0;
-            }else{
-                curIndex2+=1;
-            }
-            obj2.src="image/"+arr2[curIndex2];
-        }
-    </script>
+<script type="text/javascript">
+var btn = document.getElementById('btn');
+btn.addEventListener('mouseover', function() {
+    document.getElementById('menu').setAttribute('class', "menu show");
+});
+btn.addEventListener('mouseout', function() {
+    document.getElementById('menu').setAttribute('class', "menu");
+});
+var log = document.getElementById('log');
+log.addEventListener('click', function() {
+    document.getElementById('forms').setAttribute('class', "forms forms_show");
+});
+var close = document.getElementById('close');
+close.addEventListener('click', function() {
+    document.getElementById('forms').setAttribute('class', "forms");
+});
+var curIndex1 = 0;
+//时间间隔 单位毫秒
+var timeInterval = 3000;
+var arr1 = new Array();
+arr1[0] = "b0.jpg";
+arr1[1] = "b1.jpg";
+arr1[2] = "b2.jpg";
+arr1[3] = "b3.jpg";
+arr1[3] = "b4.jpg";
+setInterval(changeImg1, timeInterval);
+
+function changeImg1() {
+    var obj1 = document.getElementById("pic1");
+    if (curIndex1 == arr1.length - 1) {
+        curIndex1 = 0;
+    } else {
+        curIndex1 += 1;
+    }
+    obj1.src = "image/" + arr1[curIndex1];
+}
+var curIndex2 = 0;
+var arr2 = new Array();
+arr2[0] = "d0.jpg";
+arr2[1] = "d1.jpg";
+arr2[2] = "d2.jpg";
+arr2[3] = "d3.jpg";
+arr2[3] = "d4.jpg";
+setInterval(changeImg2, timeInterval);
+
+function changeImg2() {
+    var obj2 = document.getElementById("pic2");
+    if (curIndex2 == arr2.length - 1) {
+        curIndex2 = 0;
+    } else {
+        curIndex2 += 1;
+    }
+    obj2.src = "image/" + arr2[curIndex2];
+}
+</script>
+
 </html>
