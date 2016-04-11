@@ -28,21 +28,18 @@
             </div>
         </div>
     </div>
-    <!-- 
-    <div class="showpic">
-        <img src="image/1.jpg" width="427" height="219" id="showpic" /> 
-    </div> -->
+
     <div class="all">
         <div class="pic1">
-            <a href="./ice.html">
-                <div class="dy">电影世界</div>
-            </a>
+
+                <button class="dy" id = "qdl1" >电影世界</button>
+
             <img id="pic1" src="image/b0.jpg">
         </div>
         <div class="pic2">
-            <a href="./fire.html">
-                <div class="xs">小说世界</div>
-            </a>
+
+                <button class="xs" id = "qdl2">小说世界</button>
+
             <img id="pic2" src="image/d0.jpg">
         </div>
         <div class="forms" id="forms">
@@ -67,7 +64,7 @@
                 <br>
                 <br>
                 <a href="./loghome.html">
-                    <div class="form_bar" href="./register.html">登&nbsp;&nbsp;&nbsp;陆</div>
+                    <div class="form_bar" href="./loghome.html">登&nbsp;&nbsp;&nbsp;陆</div>
                 </a>
                 <a href="./register.html">
                     <div class="form_bar" href="./register.html">注&nbsp;&nbsp;&nbsp;册</div>
@@ -75,69 +72,80 @@
             </form>
         </div>
     </div>
-    <div id="left">
-    </div>
-    <div id="center">
-    </div>
-    <div id="end">
-    </div>
-    </div>
-    </div>
+
+
 </body>
 <script type="text/javascript">
-var btn = document.getElementById('btn');
-btn.addEventListener('mouseover', function() {
-    document.getElementById('menu').setAttribute('class', "menu show");
-});
-btn.addEventListener('mouseout', function() {
-    document.getElementById('menu').setAttribute('class', "menu");
-});
-var log = document.getElementById('log');
-log.addEventListener('click', function() {
-    document.getElementById('forms').setAttribute('class', "forms forms_show");
-});
-var close = document.getElementById('close');
-close.addEventListener('click', function() {
-    document.getElementById('forms').setAttribute('class', "forms");
-});
-var curIndex1 = 0;
-//时间间隔 单位毫秒
-var timeInterval = 3000;
-var arr1 = new Array();
-arr1[0] = "b0.jpg";
-arr1[1] = "b1.jpg";
-arr1[2] = "b2.jpg";
-arr1[3] = "b3.jpg";
-arr1[3] = "b4.jpg";
-setInterval(changeImg1, timeInterval);
+    var btn = document.getElementById('btn');
+    btn.addEventListener('mouseover', function() {
+        document.getElementById('menu').setAttribute('class', "menu show");
+    });
+    btn.addEventListener('mouseout', function() {
+        document.getElementById('menu').setAttribute('class', "menu");
+    });
+    var log = document.getElementById('log');
+    log.addEventListener('click', function() {
+        document.getElementById('forms').setAttribute('class', "forms forms_show");
+    });
+    var close = document.getElementById('close');
+    close.addEventListener('click', function() {
+        document.getElementById('forms').setAttribute('class', "forms");
+    });
+    var curIndex1 = 0;
+    //时间间隔 单位毫秒
+    var timeInterval = 3000;
+    var arr1 = new Array();
+    arr1[0] = "b0.jpg";
+    arr1[1] = "b1.jpg";
+    arr1[2] = "b2.jpg";
+    arr1[3] = "b3.jpg";
+    arr1[3] = "b4.jpg";
+    setInterval(changeImg1, timeInterval);
 
-function changeImg1() {
-    var obj1 = document.getElementById("pic1");
-    if (curIndex1 == arr1.length - 1) {
-        curIndex1 = 0;
-    } else {
-        curIndex1 += 1;
+    function changeImg1() {
+        var obj1 = document.getElementById("pic1");
+        if (curIndex1 == arr1.length - 1) {
+            curIndex1 = 0;
+        } else {
+            curIndex1 += 1;
+        }
+        obj1.src = "image/" + arr1[curIndex1];
     }
-    obj1.src = "image/" + arr1[curIndex1];
-}
-var curIndex2 = 0;
-var arr2 = new Array();
-arr2[0] = "d0.jpg";
-arr2[1] = "d1.jpg";
-arr2[2] = "d2.jpg";
-arr2[3] = "d3.jpg";
-arr2[3] = "d4.jpg";
-setInterval(changeImg2, timeInterval);
+    var curIndex2 = 0;
+    var arr2 = new Array();
+    arr2[0] = "d0.jpg";
+    arr2[1] = "d1.jpg";
+    arr2[2] = "d2.jpg";
+    arr2[3] = "d3.jpg";
+    arr2[3] = "d4.jpg";
+    setInterval(changeImg2, timeInterval);
 
-function changeImg2() {
-    var obj2 = document.getElementById("pic2");
-    if (curIndex2 == arr2.length - 1) {
-        curIndex2 = 0;
-    } else {
-        curIndex2 += 1;
+    function changeImg2() {
+        var obj2 = document.getElementById("pic2");
+        if (curIndex2 == arr2.length - 1) {
+            curIndex2 = 0;
+        } else {
+            curIndex2 += 1;
+        }
+        obj2.src = "image/" + arr2[curIndex2];
     }
-    obj2.src = "image/" + arr2[curIndex2];
-}
+    var qdl1 = document.getElementById('qdl1');
+    qdl1.onclick = qd;
+    function qd() {
+        alert("请登录");
+        if (true) {
+            document.getElementById('forms').setAttribute('class', "forms forms_show");
+        }
+    };
+    var qdl2 = document.getElementById('qdl2');
+    qdl2.onclick = qd;
+    function qd() {
+        alert("请登录");
+        if (true) {
+            document.getElementById('forms').setAttribute('class', "forms forms_show");
+        }
+    };
+
 </script>
 
 </html>

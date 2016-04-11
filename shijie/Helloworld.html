@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta http-equiv="content-Type" content="text/css3; charset=UTF-8" >
+	<meta http-equiv="content-Type" content="text/css3; charset=UTF-8">
 	<title>网际世界</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<style type="text/css">
-	a{
-		text-decoration: none;
-		color:#ffffff;
-	}
-		body{
+		a {
+			text-decoration: none;
+			color: #ffffff;
+		}
+
+		body {
 			background: url(a.jpg) 0px 0px;
 			background-size: cover;
 			padding: 0px;
 			margin: 0px;
 			border: 0px;
 		}
-		#head{
+
+		#head {
 			border: 0px;
 			padding: 0px;
 			margin: 0px;
 			height: 75px;
 			width: 100%;
 			background-color: #0000ff;
-			opacity:0.4;
+			opacity: 0.4;
 			position: fixed;
 			box-shadow: 0px 0px 10px 0px #443333;
 		}
-		.b{
+
+		.b {
 			width: 50%;
 			position: relative;
 			right: 20px;
 			top: 3px;
 			float: right;
 		}
-		.b1{
+
+		.b1 {
 			position: relative;
 			float: left;
 			border: 5px;
 			height: 40px;
 			width: 110px;
 			margin: 10px;
-			padding: 5px 13px; 
+			padding: 5px 13px;
 			border: 1px solid #ffffff;
 			border-radius: 5px;
 			text-align: center;
 			font-size: 30px;
 			color: #ffffff;
 		}
-		.b1:hover{
+
+		.b1:hover {
 			position: relative;
 			float: left;
 			border: 5px;
 			height: 50px;
 			width: 120px;
 			margin: 5px;
-			padding: 5px 13px; 
+			padding: 5px 13px;
 			border: 1px solid yellow;
 			box-shadow: 2px 3px 3px 1px orange;
 			border-radius: 5px;
@@ -63,141 +69,148 @@
 			font-size: 40px;
 			color: yellow;
 		}
-		.menu{
+
+		.menu {
 			font-size: 30px;
-			position:relative;
+			position: relative;
 			top: 0px;
 		}
-		.hidden{
+
+		.hidden {
 			top: 100px;
 			font-size: 30px;
 			height: 40px;
 			border: 5px #343532;
 			display: none;
 		}
-		.menu:hover .hidden{
-			
+
+		.menu:hover .hidden {
 			display: block;
 		}
-/* ? */
-	.go-back {
-		text-align:center;
-		background: green;
-		border-top:1px dashed #000000;
-		padding:10px;
-		margin-top:20px;
-		font-size:40px;
-	}
-	.wrapper {
-		border:1px solid #e6e6e6;
-		padding:50px;
-	}
-	.black_overlay {
-		position: fixed;
-		z-index:1000;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		filter: alpha(opacity=80);
-		opacity: 0.8;
-		overflow: hidden;
-		background-color: #000 ;
-	}
-	*html {
-		background:url(*) fixed;
-	}	
-	*html body {
-		margin:0;
-		height:100%;
-	}
-	*html .black_overlay {
-		position: absolute;
-	left: expression(documentElement.scrollLeft + documentElement.clientWidth - this.offsetWidth);
-	top: expression(documentElement.scrollTop + documentElement.clientHeight - this.offsetHeight);
-	}
-	.white_content {
-		display: none;
-		position: absolute;
-		top: 20%;
-		left: 33%;
-		width: 450px;
-		height: 300px;
-		border: 16px solid #FFF;
-		border-bottom:none;
-		background-color: white;
-		opacity: 0.8;
-		z-index:1002;
-		overflow: auto;
-		border-radius: 50px;
-	}
-/* ! */
-.forms{
-	position: absolute;
-	top: 100px;
-	left: 80px;
-}
+		/* ? */
+
+		.go-back {
+			text-align: center;
+			background: green;
+			border-top: 1px dashed #000000;
+			padding: 10px;
+			margin-top: 20px;
+			font-size: 40px;
+		}
+
+		.wrapper {
+			border: 1px solid #e6e6e6;
+			padding: 50px;
+		}
+
+		.black_overlay {
+			position: fixed;
+			z-index: 1000;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			filter: alpha(opacity=80);
+			opacity: 0.8;
+			overflow: hidden;
+			background-color: #000;
+		}
+
+		*html {
+			background: url(*) fixed;
+		}
+
+		*html body {
+			margin: 0;
+			height: 100%;
+		}
+
+		*html .black_overlay {
+			position: absolute;
+			left: expression(documentElement.scrollLeft + documentElement.clientWidth - this.offsetWidth);
+			top: expression(documentElement.scrollTop + documentElement.clientHeight - this.offsetHeight);
+		}
+
+		.white_content {
+			display: none;
+			position: absolute;
+			top: 20%;
+			left: 33%;
+			width: 450px;
+			height: 300px;
+			border: 16px solid #FFF;
+			border-bottom: none;
+			background-color: white;
+			opacity: 0.8;
+			z-index: 1002;
+			overflow: auto;
+			border-radius: 50px;
+		}
+		/* ! */
+
+		.forms {
+			position: absolute;
+			top: 100px;
+			left: 80px;
+		}
 	</style>
 </head>
+
 <body>
 	<div id="head">
-	<!-- 固定的标题顶栏 -->
+		<!-- 固定的标题顶栏 -->
 		<div>
 			<!-- 冰火世界logo -->
 		</div>
 		<div class="b">
 			<!-- 选项按钮和下拉菜单 -->
-			<div class = "b1" herf = "#">
+			<div class="b1" herf="#">
 				<a href="#">Home</a>
 			</div>
-			<div class = "b1">
-				
+			<div class="b1">
+
 			</div>
-			<div class = "b1" "wrapper"><!-- ?-->  			
+			<div class="b1" "wrapper">
+				<!-- ?-->
 				<a href="#" onClick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">登陆</a>
 			</div>
-			<div class = "b1">
-				<div class = "menu">About
-					
-					<div class = "hidden" color = "yellow"><a herf="#">联系我们</a></div>
-                				<div class = "hidden" color = "#ffffff">作者JS</div>	
-            					</div>
-            				</div>
+			<div class="b1">
+				<div class="menu">About
+
+					<div class="hidden" color="yellow"><a herf="#">联系我们</a></div>
+					<div class="hidden" color="#ffffff">作者JS</div>
+				</div>
 			</div>
 		</div>
 	</div>
+	</div>
 	<!-- ? -->
 	<div id="light" class="white_content">
-  		<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><span color = "#000">关闭</span></a>
-  		<div class = "forms">
-  			<form method="post" action="laowang.php">
-    				用户名：<input type="text" id="name">
-    				<br>
-       				密码：&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" id="password">
-       				<br>
-       				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       				 <input type="checkbox" value="hold" name="habit">记住密码
-       				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   				<input type="checkbox" value="log" name="habit">自动登陆
-   				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	       			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	 	      		<input type="submit" value="登陆" name="submitBnt" />
-       				<input type="reset" value="注册" name="submitBnt" />
-   			</form>
-   		</div>
-  	</div>
+		<a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><span color = "#000">关闭</span></a>
+		<div class="forms">
+			<form method="post" action="laowang.php">
+				用户名：
+				<input type="text" id="name">
+				<br> 密码：&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="password" id="password">
+				<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" value="hold" name="habit">记住密码 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" value="log" name="habit">自动登陆
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="submit" value="登陆" name="submitBnt" />
+				<input type="reset" value="注册" name="submitBnt" />
+			</form>
+		</div>
+	</div>
 	<div id="left">
-		
+
 	</div>
 	<div id="center">
-		
+
 	</div>
-	<div id="end"> 
-	<!-- 固定的标题顶栏 -->
+	<div id="end">
+		<!-- 固定的标题顶栏 -->
 	</div>
 </body>
+
 </html>

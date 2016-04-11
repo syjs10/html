@@ -5,101 +5,101 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style type="text/css">
-    a {
-        text-decoration: none;
-    }
-    
-    * {
-        margin: 0px;
-        padding: 0px;
-        border: 0px;
-    }
-    
-    body {
-        background: url(image/log.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    
-    span {
-        position: relative;
-        top: 3px;
-        font-size: 28px;
-        line-height: 29px;
-    }
-    
-    .title {
-        position: absolute;
-        left: 43vw;
-        top: 5vh;
-        color: #ddd;
-        font-size: 70px;
-        font-family: "华文琥珀";
-    }
-    
-    .all {
-        padding-top: 70px;
-        padding-bottom: 20px;
-        padding-left: 100px;
-        width: 64%;
-        position: absolute;
-        top: 20vh;
-        left: 15vw;
-        border-radius: 2px;
-        background-color: rgba(255, 255, 255, 0.4);
-    }
-    
-    input {
-        font-size: 25px;
-        position: absolute;
-        left: 270px;
-        line-height: 30px;
-        border-radius: 5px;
-        background-color: rgba(255, 255, 255, 0.6);
-    }
-    
-    #sex {
-        position: relative;
-        left: 200px;
-    }
-    
-    .nv {
-        position: relative;
-        left: 205px;
-    }
-    
-    .nan {
-        position: relative;
-        left: 205px;
-    }
-    
-    .date select {
-        position: relative;
-        left: 45px;
-        height: 30px;
-        width: 90px;
-        opacity: 0.7;
-        border-radius: 5px;
-        list-style: none;
-    }
-    
-    .a {
-        position: relative;
-        left: 47px;
-    }
-    
-    .button {
-        position: relative;
-        left: 50px;
-        margin: 30px 50px;
-        width: 200px;
-        background: #00ff00;
-        color: #fff;
-    }
-    
-    .button:hover {
-        background-color: #44ff44;
-    }
+        a {
+            text-decoration: none;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+
+        body {
+            background: url(image/log.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        span {
+            position: relative;
+            top: 3px;
+            font-size: 28px;
+            line-height: 29px;
+        }
+
+        .title {
+            position: absolute;
+            left: 43vw;
+            top: 5vh;
+            color: #ddd;
+            font-size: 70px;
+            font-family: "华文琥珀";
+        }
+
+        .all {
+            padding-top: 70px;
+            padding-bottom: 20px;
+            padding-left: 100px;
+            width: 64%;
+            position: absolute;
+            top: 20vh;
+            left: 15vw;
+            border-radius: 2px;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        input {
+            font-size: 25px;
+            position: absolute;
+            left: 270px;
+            line-height: 30px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        #sex {
+            position: relative;
+            left: 200px;
+        }
+
+        .nv {
+            position: relative;
+            left: 205px;
+        }
+
+        .nan {
+            position: relative;
+            left: 205px;
+        }
+
+        .date select {
+            position: relative;
+            left: 45px;
+            height: 30px;
+            width: 90px;
+            opacity: 0.7;
+            border-radius: 5px;
+            list-style: none;
+        }
+
+        .a {
+            position: relative;
+            left: 47px;
+        }
+
+        .button {
+            position: relative;
+            left: 50px;
+            margin: 30px 50px;
+            width: 200px;
+            background: #00ff00;
+            color: #fff;
+        }
+
+        .button:hover {
+            background-color: #44ff44;
+        }
     </style>
 </head>
 
@@ -229,15 +229,15 @@
     </div>
 </body>
 <script type="text/javascript">
-var btn = document.getElementById("log");
+    var btn = document.getElementById("log");
 
-function alt() {
-    var massage = confirm("恭喜你注册成功!!!");
-    if (massage == true) {
-        window.top.location = "./home.html";
+    function alt() {
+        var massage = confirm("恭喜你注册成功!!!");
+        if (massage == true) {
+            window.top.location = "./home.html";
+        }
     }
-}
-btn.onclick = alt;
+    btn.onclick = alt;
 </script>
 
 </html>
