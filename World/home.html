@@ -32,14 +32,13 @@
     <div class="all">
         <div class="pic1">
 
-                <button class="dy" id = "qdl1" >电影世界</button>
+            <button type="button" name="button" class="dy" id="qdl1">电影世界</button>
 
             <img id="pic1" src="image/b0.jpg">
         </div>
         <div class="pic2">
 
-                <button class="xs" id = "qdl2">小说世界</button>
-
+            <button type="button" name="button" class="xs" id="qdl2">小说世界</button>
             <img id="pic2" src="image/d0.jpg">
         </div>
         <div class="forms" id="forms">
@@ -131,6 +130,7 @@
     }
     var qdl1 = document.getElementById('qdl1');
     qdl1.onclick = qd;
+
     function qd() {
         alert("请登录");
         if (true) {
@@ -139,13 +139,13 @@
     };
     var qdl2 = document.getElementById('qdl2');
     qdl2.onclick = qd;
+
     function qd() {
         alert("请登录");
         if (true) {
             document.getElementById('forms').setAttribute('class', "forms forms_show");
         }
     };
-
 </script>
 
 </html>

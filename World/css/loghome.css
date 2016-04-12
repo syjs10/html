@@ -90,6 +90,12 @@
     }
     .navbar ul li a:hover {
         text-shadow: 0 0 9px #dddd00;
+        animation: tantan 1s infinite;
+
+    }
+    @keyframes tantan{
+        0%:{width:300px;}
+        100%:{width: 500px;}
     }
     .navbar ul li.about-btn {
         width: 70px;
@@ -249,11 +255,14 @@
         left: 470px;
         width: 300px;
         height: 60px;
+
     }
     .dy:hover {
         border: 2px solid yellow;
         color: yellow;
+
     }
+
     .xs {
         padding-bottom: 7px;
         padding-left: 5px;
