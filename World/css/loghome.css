@@ -89,13 +89,7 @@
         box-sizing: border-box;
     }
     .navbar ul li a:hover {
-        text-shadow: 0 0 9px #dddd00;
-        animation: tantan 1s infinite;
-
-    }
-    @keyframes tantan{
-        0%:{width:300px;}
-        100%:{width: 500px;}
+        text-shadow: 0 0 9px ##1180fc;
     }
     .navbar ul li.about-btn {
         width: 70px;
@@ -223,7 +217,7 @@
         background: no-repeat;
         position: relative;
         left: 0px;
-        top: -45px;
+        top: 25px;
         width: 100%;
         height: 516px;
     }
@@ -237,7 +231,7 @@
         background-size: 100%;
         position: relative;
         left: 0px;
-        top: -45px;
+        top: 0px;
         width: 100%;
         height: 518px;
     }
@@ -250,19 +244,51 @@
         border-radius: 20px;
         font-width: bold;
         text-align: center;
-        position: relative;
-        top: 270px;
-        left: 470px;
+        position: absolute;
+        ;
+        top: 200px;
+        left: 490px;
         width: 300px;
         height: 60px;
-
     }
     .dy:hover {
         border: 2px solid yellow;
         color: yellow;
 
+        animation: tantan 1s infinite;
+        transition: .3s;
     }
-
+    @keyframes tantan {
+        0% {
+            width: 300px;
+            height: 60px
+        }
+        25% {
+            margin-top: 0px;
+            transform: rotate(4deg);
+            -ms-transform: rotate(4deg);
+            /* IE 9 */
+            -webkit-transform: rotate(4deg);
+            /* Safari and Chrome */
+        }
+        50% {
+            margin-left: 25px;
+            margin-top: -7px;
+            width: 250px;
+            height: 65px
+        }
+        75% {
+            margin-top: 0px;
+            transform: rotate(-4deg);
+            -ms-transform: rotate(-4deg);
+            /* IE 9 */
+            -webkit-transform: rotate(-4deg);
+        }
+        100% {
+            width: 300px;
+            height: 60px
+        }
+    }
     .xs {
         padding-bottom: 7px;
         padding-left: 5px;
@@ -272,13 +298,15 @@
         border-radius: 20px;
         font-width: bold;
         text-align: center;
-        position: relative;
-        top: 270px;
-        left: 470px;
+        position: absolute;;
+        top: 200px;
+        left: 490px;
         width: 300px;
         height: 60px;
     }
     .xs:hover {
         border: 2px solid blue;
         color: blue;
+        animation: tantan 1s infinite;
+        transition: .3s;
     }

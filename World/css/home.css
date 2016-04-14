@@ -248,9 +248,10 @@
     .dy:hover {
         border: 2px solid yellow;
         color: yellow;
-
+        animation: tantan 1s infinite;
+        transition: .3s;
     }
-    
+
     .xs {
         background: none;
         border: 2px solid #f24356;
@@ -267,4 +268,73 @@
     .xs:hover {
         border: 2px solid blue;
         color: blue;
+        animation: tantan 1s infinite;
+        transition: .3s;
+    }
+
+
+
+
+
+
+
+
+    .dy:hover {
+        border: 2px solid yellow;
+        color: yellow;
+
+        animation: tantan 1s infinite;
+        transition: .3s;
+    }
+    @keyframes tantan {
+        0% {
+            width: 300px;
+            height: 60px
+        }
+        25% {
+            margin-top: 0px;
+            transform: rotate(4deg);
+            -ms-transform: rotate(4deg);
+            /* IE 9 */
+            -webkit-transform: rotate(4deg);
+            /* Safari and Chrome */
+        }
+        50% {
+            margin-left: 25px;
+            margin-top: -7px;
+            width: 250px;
+            height: 65px
+        }
+        75% {
+            margin-top: 0px;
+            transform: rotate(-4deg);
+            -ms-transform: rotate(-4deg);
+            /* IE 9 */
+            -webkit-transform: rotate(-4deg);
+        }
+        100% {
+            width: 300px;
+            height: 60px
+        }
+    }
+    .xs {
+        padding-bottom: 7px;
+        padding-left: 5px;
+        border: 2px solid #f24356;
+        font-size: 50px;
+        color: #f24356;
+        border-radius: 20px;
+        font-width: bold;
+        text-align: center;
+        position: absolute;;
+        top: 200px;
+        left: 490px;
+        width: 300px;
+        height: 60px;
+    }
+    .xs:hover {
+        border: 2px solid blue;
+        color: blue;
+        animation: tantan 1s infinite;
+        transition: .3s;
     }
