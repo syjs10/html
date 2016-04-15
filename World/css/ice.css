@@ -225,7 +225,7 @@
         background-color: green;
         height: 100px;
         width: 80px;
-        float: left;
+        display: inline-block;
         color: #ffff00;
         transform: .3s;
     }
@@ -307,7 +307,7 @@
     }
     .right {
         position: absolute;
-        right: 45px;
+        right: 30px;
         top: 100px;
         height: 415px;
         width: 340px;
