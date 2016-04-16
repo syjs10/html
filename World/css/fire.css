@@ -130,11 +130,15 @@
         transition: .3s;
     }
     .menu div {
+        color: #ccc;
         text-align: right;
         box-sizing: border-box;
         padding: 5px 10px 5px 12px;
         margin-top: 10px;
         border-right: 5px solid #ff9c00;
+    }
+    .menu div a{
+        color: #ccc;
     }
     .show {
         visibility: visible;
@@ -215,7 +219,16 @@
     .bc img {
         height: 100%;
         width: 100%;
-        opacity: 0.8;
+        opacity: 0.3;
+    }
+    .bc2{
+        position: absolute;
+        height: 600px;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 0;
+        background: rgba(0, 0, 0, 1);
     }
     .left {
         position: absolute;
@@ -233,7 +246,7 @@
         border-radius: 5px;
         line-height: 27px;
         font-weight: bold;
-        color: #18d78d;
+        color: #30f014;
         box-shadow: 0px 0px 2px 0px #cdcdcd
     }
     .dp {
@@ -303,8 +316,9 @@
         font-size: 30px;
     }
     .BD1:hover {
-        background-color: #dcdcdd;
-        color: #dd5533;
+        box-shadow: 0px 0px 3px 3px #ccc;
+        background-color: #f25e87;
+        color: rgb(248, 236, 8);
         opacity: 0.7;
         -webkit-transition: 1s;
         -o-transition: 1s;
@@ -438,4 +452,31 @@
         width: 100px;
         left: 69vw;
         font-size: 20px;
+    }
+
+
+    #mouse{
+        z-index: 10000;
+    }
+    #mouse div {
+
+        background: none;
+        position: absolute;
+        border-radius: 50%;
+
+    }
+    @keyframes big {
+        0% {</div>
+    </div>
+            box-shadow: 0px 0px 1px 1px #0f0;
+            opacity: 1;
+        }
+        50% {
+            box-shadow: 0px 0px 5px 5px #0f0;
+            opacity: 0.7;
+        }
+        100% {
+            box-shadow: 0px 0px 10px 10px #0f0;
+            opacity: 0;
+        }
     }

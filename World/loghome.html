@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <div id="head">
         <!-- 固定的标题顶栏 -->
         <div class="logo head-content">
@@ -87,7 +88,13 @@
     </div>
     <div id="end">
     </div>
-    </div>
+    <div id="mouse">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
 </body>
 <script type="text/javascript">
@@ -143,6 +150,25 @@
             curIndex2 += 1;
         }
         obj2.src = "image/" + arr2[curIndex2];
+    };
+    window.onload = function() {
+        var a = document.getElementById("mouse");
+        var aDiv = a.getElementsByTagName('div');
+        var i = 0;
+        setInterval(function() {
+            for (i = aDiv.length - 1; i > 0; i--) {
+                aDiv[i].style.left = aDiv[i - 1].style.left;
+                aDiv[i].style.top = aDiv[i - 1].style.top;
+                aDiv[i].style.animation = "big 1s infinite";
+                aDiv[i].transition = ".3s";
+            }
+        }, 70);
+        document.onmousemove = function(ev) {
+            var oEvent = ev || event;
+            aDiv[0].style.left = oEvent.clientX + 'px';
+            aDiv[0].style.top = oEvent.clientY + 'px';
+            aDiv[i].transition = ".3s";
+        };
     }
 </script>
 

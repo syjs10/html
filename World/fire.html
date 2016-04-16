@@ -33,6 +33,9 @@
         </div>
     </div>
     <div class="bc">
+        <div class="bc2">
+
+        </div>
         <img src="./image/fireb.jpg">
     </div>
     <div class="forms" id="forms">
@@ -282,6 +285,14 @@
         <button class="btnsub">提交</button>
         <button class="btnsub">取消</button>
     </div>
+    <div id = "mouse">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </body>
 <script type="text/javascript">
     var btn = document.getElementById('btn');
@@ -321,6 +332,26 @@
         var pid3 = document.getElementById('mk');
         pid3.innerHTML =
             "天蚕土豆，本名李虎。1989年出生于四川，中国内地网络小说作家、80后著名作家、浙江省网络作家协会副主席。2008年4月，在起点中文网开始创作处女座《魔兽剑圣异界纵横》，5月，成为起点中文网签约作家之一。2009年4月，创作长篇玄幻小说《斗破苍穹》，此书在起点中文网高达1亿4千多万的点击率，凭借此书的巨大人气，天蚕土豆一书成名，成为2009年起点中文网白金作家。2012年创作《武动乾坤》，获得中国网络作家富豪榜第三名。2013年的新作品《大主宰》在起点中文网连载，获得中国网络作家富豪榜第二名。2014年4月，一部绝密作品在没有任何网络连载的情况下横空出世，此书名为《斗破苍穹前传之药老传奇》，此次新书上市之后，再次获得中国网络作家富豪榜第三名。其作品相继被改编为网游和手游，所有作品都已改编为漫画，《斗破苍穹》更是被万达改编为电影。"
+    }
+
+    window.onload = function() {
+        var a = document.getElementById("mouse");
+        var aDiv = a.getElementsByTagName('div');
+        var i = 0;
+        setInterval(function() {
+            for (i = aDiv.length - 1; i > 0; i--) {
+                aDiv[i].style.left = aDiv[i - 1].style.left;
+                aDiv[i].style.top = aDiv[i - 1].style.top;
+                aDiv[i].style.animation = "big 1s infinite";
+                aDiv[i].transition = ".3s";
+            }
+        }, 70);
+        document.onmousemove = function(ev) {
+            var oEvent = ev || event;
+            aDiv[0].style.left = oEvent.clientX + 'px';
+            aDiv[0].style.top = oEvent.clientY + 'px';
+
+        };
     }
 </script>
 
