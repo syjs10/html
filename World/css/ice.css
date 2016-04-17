@@ -287,6 +287,7 @@
         left: 10vw;
         height: 65vh;
         width: 60vw;
+        z-index: 0;
     }
     .vh {
         position: absolute;
