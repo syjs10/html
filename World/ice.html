@@ -18,7 +18,7 @@
     </script>
 </head>
 
-<body style="100px;">
+<body style="40%;">
     <div class="bcg"><img src="./image/bb.jpg" class="background"></div>
     <div id="head">
         <!-- 固定的标题顶栏 -->
@@ -41,9 +41,7 @@
                 <div><a herf="#">退出登录</a></div>
             </div>
         </div>
-        <div class=i d="eshow">
-            <img src="">
-        </div>
+
         <div class="forms" id="forms">
             <button href="#" class="close" id="close">
                 ×
@@ -91,9 +89,7 @@
     </div>
     <div id="end">
         <div id="e1" class="e1" "e">
-            <button href="#" class="close" id="close1">
-                ×
-            </button>
+
             <img src="image/yewen.jpg">
         </div>
         <div id="e2" class="e2" "e">
@@ -103,9 +99,14 @@
             <img src="image/bianxing.jpg">
         </div>
         <div id="e4" class="e4" "e">
-            <img src="">
+            <img src="image/f1.jpg">
         </div>
     </div>
+    <div class = "eshow" id = "eshow1">
+        <img  id="eshow" src="">
+        <button href="#" class="close" id="close1">
+            ×
+        </button>
     </div>
 </body>
 <script type="text/javascript">
@@ -126,26 +127,38 @@
     });
     var e1 = document.getElementById('e1');
     e1.addEventListener('click', function() {
-        var eshow = document.getElementById('e1')
-        eshow.setAttribute('class', "eshow eshow img");
+        var eshow1 = document.getElementById('eshow1');
+        eshow1.setAttribute('class', "eshow1");
+        var eshow = document.getElementById('eshow');
+        eshow.src = "image/yewen.jpg";
     });
-
-
     var e2 = document.getElementById('e2');
     e2.addEventListener('click', function() {
-        document.getElementById('e2').setAttribute('class', "eshow");
+        var eshow1 = document.getElementById('eshow1');
+        eshow1.setAttribute('class', "eshow1");
+        var eshow = document.getElementById('eshow');
+        eshow.src = "image/gongfu.jpg";
     });
     var e3 = document.getElementById('e3');
     e3.addEventListener('click', function() {
-        document.getElementById('e3').setAttribute('class', "eshow");
+        var eshow1 = document.getElementById('eshow1');
+        eshow1.setAttribute('class', "eshow1");
+        var eshow = document.getElementById('eshow');
+        eshow.src = "image/bianxing.jpg";
     });
     var e4 = document.getElementById('e4');
     e4.addEventListener('click', function() {
-        document.getElementById('e4').setAttribute('class', "eshow");
+        var eshow1 = document.getElementById('eshow1');
+        eshow1.setAttribute('class', "eshow1");
+        var eshow = document.getElementById('eshow');
+        eshow.src = "image/f1.jpg";
     });
-    var e5 = document.getElementById('e5');
-    e5.addEventListener('click', function() {
-        document.getElementById('e5').setAttribute('class', "eshow ");
+
+
+    var close1 = document.getElementById('close1');
+    close1.addEventListener('click', function(){
+        var eshow1 = document.getElementById('eshow1');
+        eshow1.setAttribute('class', "eshow");
     });
     var video = document.getElementById('video');
     video.addEventListener('mouseover', function() {

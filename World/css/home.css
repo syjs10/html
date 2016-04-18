@@ -302,14 +302,6 @@
         animation: tantan 1s infinite;
         transition: .3s;
     }
-
-
-
-
-
-
-
-
     .dy:hover {
         border: 2px solid yellow;
         color: yellow;
