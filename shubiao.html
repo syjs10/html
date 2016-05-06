@@ -1,0 +1,65 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Div层的鼠标跟随拖影效果</title>
+    <style>
+        div {
+
+            background: none;
+            position: absolute;
+            border-radius: 50%;
+
+        }
+        @keyframes big {
+            0% {
+                box-shadow: 0px 0px 1px 1px blue;
+                opacity: 1;
+            }
+            50% {
+                box-shadow: 0px 0px 5px 5px blue;
+                opacity: 0.7;
+            }
+            100% {
+                box-shadow: 0px 0px 10px 10px blue;
+                opacity: 0;
+            }
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var a = document.getElementById("mouse");
+            var aDiv = a.getElementsByTagName('div');
+            var i = 0;
+            setInterval(function() {
+                for (i = aDiv.length - 1; i > 0; i--) {
+                    aDiv[i].style.left = aDiv[i - 1].style.left;
+                    aDiv[i].style.top = aDiv[i - 1].style.top;
+                    aDiv[i].style.animation = "big 1s infinite";
+                    aDiv[i].transition = ".3s";
+                }
+            }, 70);
+            document.onmousemove = function(ev) {
+                var oEvent = ev || event;
+                aDiv[0].style.left = oEvent.clientX + 'px';
+                aDiv[0].style.top = oEvent.clientY + 'px';
+
+            };
+        };
+    </script>
+</head>
+
+<body>
+    <div id = "mouse">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</body>
+
+</html>

@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<script type="text/javascript" src="./snow.js"></script>
-	<style type="text/css">
-		body{
-			background-color: #000;
-		}
-	</style>
-	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta charset="utf-8">
+	<title>为网站增加js网页雪花效果jquery插件，特别适合圣诞/元旦/新年网站气氛 - 懒人建站</title>
+	<meta name="description" content="懒人建站为您提供-基于jquery特效，jquery弹出层效果，js特效代码大全，JS广告代码，导航菜单代码，下拉菜单代码和jquery焦点图片代码。" />
+
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script src="jq.snow.js"></script>
+    <!--下面是调用方法和参数说明-->
+	<script>
+	$(function(){
+		$.fn.snow({
+			minSize: 5,		//雪花的最小尺寸
+			maxSize: 50, 	//雪花的最大尺寸
+			newOn: 300		//雪花出现的频率 这个数值越小雪花越多
+		});
+	});
+	</script>
 </head>
-<body>
-	
+<body style="background:#3B3B3B url(bg.jpg) no-repeat center 100px; color:#ccc;">
+
 </body>
-	<script src = ""></script>
-	<script src = ""></script>
 </html>
