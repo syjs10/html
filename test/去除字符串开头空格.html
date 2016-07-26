@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+        function print99(x) {
+            while ((x.length > 0) && (x.charAt(0) == ' ')) {
+                x = x.substring(1, x.length);
+            }
+            while ((x.length > 0) && (x.charAt(x.length - 1) == ' ')) {
+                x = x.substring(0, x.length - 1);
+            }
+            alert("Kill=" + x + "==");
+            return x;
+
+        }
+    </script>
+</head>
+
+<body>
+    <a href="javascript:print99('   ajflkasd lsakdf   ')">h</a>
+</body>
+
+</html>
